@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", serif;
+}
+.pack1{
+    width: 100%;
+    height: 100vh;
+    background-color: #495057;
+}
+nav{
+    width: 100%;
+    height: 50px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+}
+nav img{
+   margin-left: 70px;
+   margin-top: 15px;
+}
+#btn1{
+    padding: 8px 12px;
+    background-color: orange;
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#btn1:hover{
+    background-color: #f35b04;
+}
+/* ------------------------------------HERO SECTION----------------------------- */
+.container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 350px;
+    margin-top: 30px;
+}
+.container h1{
+    margin-top: 160px;
+    margin-left: 80px;
+    font-size: 50px;
+    color: #fff;
+}
+.container p{
+    margin-left: 80px;
+    color: #fff;
+    font-size: 13px;
+}
+#btn2{
+    padding: 10px 20px;
+    background-color: #ffa62b;
+    color: white;
+    outline: 0;
+    border: 0;
+    margin-left: 80px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#btn2:hover{
+    background-color: #f35b04;
+}
+/* ------------------------------SECTION TWO--------------------------------------- */
+.cards{
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.card1, .card2, .card3,.card4{
+    margin-top: 30px;
+    height: 270px;
+    width: 280px;
+    margin-left: 55px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card1:hover{
+    background-color: #ffa62b;
+}
+.card2:hover{
+    background-color: #ffa62b;
+}
+.card3:hover{
+    background-color: #ffa62b;
+}
+.card4:hover{
+    background-color: #ffa62b;
+    
+}
+.cards h3{
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.fa-solid {
+    font-size: 45px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.cards p{
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+/* -----------------------------------------ABOUT US---------------------------------------------- */
+
+.pack3{
+    height: 100vh;
+}
+.container2{
+    display: flex;
+    padding-top: 80px;
+    padding-left: 100px;
+}
+.rightside h2{
+    margin-left: 20px;
+    font-size: 3rem;
+    color: #212529;
+}
+.rightside p{
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #212529;
+    padding-right: 130px;
+}
+#btn3{
+    outline: 0;
+    border: 0;
+    background-color: #ffa62b;
+    font-size: 17px;
+    margin-left: 20px;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn3:hover{
+    background-color: #f35b04;
+}
+/* -------------------------------------------Slider---------------------------------------- */
+.pack4{
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.buttons{
+    text-align: center;
+} 
+.buttons button{
+ outline: 0;
+ border: 0;
+ background-color: #f35b04;
+ cursor: pointer;
+ padding: 13px 25px;
+ border-radius: 10px;
+ color: white;
+ margin-top: 10px;
+ font-size: 16px;
+ transition: 0.5s;
+
+}
+.buttons button:hover{
+    background-color: #ffa62b;
+    box-shadow: 2px 2px 3px 3px black;
+}
+/* -----------------------------------FOOTER------------------------------------ */
+.footer{
+    height: 220px;
+    width: 100%;
+    background-color: #495057;
+}
+.footer h2{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+.copy{
+    background-color: black;
+    height: 30px;
+    width: 100%;
+}
+.copy h3{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+/* -----------------------------------SECTION TWO RESPONSIVE----------------------------- */
+@media (max-width: 430px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .card1, .card2, .card3, .card4 {
+        width: 90%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+/* -------------------------------ABOUT US RESPONSIVE-------------------------------------- */
+@media (max-width: 430px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 40px;
+    }
+    .leftside img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .rightside h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .rightside p {
+        margin-left: 5px;
+        padding-right: 15px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    #btn3 {
+        margin-left: 0;
+        margin-left: 140px;
+        padding: 10px 20px;
+    }
+}
+/* -----------------------------SLIDER RESPONSIVE---------------------------------- */
+@media (max-width: 430px) {
+.pack4{
+   height: auto;
+   margin-bottom: 40px;
+}
+    .main {
+        width: 95%;
+        height: 300px;
+    }
+    .slide {
+        height: 100%;
+        margin-top: 20px;
+    }
+    .buttons {
+        text-align: center;
+    }
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 5px;
+        width: 25%;
+       margin-top: 10px;
+    }
+}
+/* ---------------------------------HERO SECTION----------------------------- */
+@media (max-width: 430px) {
+    .container {
+        text-align: center;
+        
+    }
+    .container img {
+        margin-left: 10px;
+        margin-top: 220px;
+        width: 80%;
+    }
+    .container h1 {
+        margin-top: 100px;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0;
+       
+    }
+    .container p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    #btn2 {
+        padding: 8px 15px;
+        font-size: 14px;
+       text-align: center;
+       margin-left: 20px;
+    }
+    .res{
+        margin-left: 20px;
+    }
+}
+/* ------------------------FOTTER RESPONSIVE----------------------- */
+@media (max-width: 430px) {
+    .footer {
+        padding: 20px;
+    }
+    .footer h2 {
+        font-size: 2rem;
+    }
+    .copy h3 {
+        font-size: 16px;
+    }
+}
+#checkbtn{
+    float: right;
+    line-height: 70px;
+    margin-right: 20px;
+    font-size: 30px;
+    display: none;
+
+}
+/* --------------------RESPONSIVE NAVBAR---------------------------------------- */
+@media(max-width: 430px){
+    #checkbtn{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        background-color: #ffa62b;
+        transition: .5s;
+    }
+    nav ul li{
+       display: block;
+       text-align: center;
+       margin-top: 20px;
+       font-weight: 500;
+       font-size: 20px;
+    }
+    #btn1{
+        display: none;
+    }
+}
+#header.sticky{
+    width: 100%;
+    position: fixed;
+   background-color: #264653;
+    top: 0;
+    box-shadow: 0px 2px 4px black;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0%;
+}
+
+
